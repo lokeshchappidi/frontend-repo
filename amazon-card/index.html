@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+            gap: 20px; /* space between cards */
+            padding: 20px;
+            margin-top: -300px;
+        }
+
+        .card {
+            height: 350px;
+            background-color: white;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+
+        .card-header {
+            font-family: Arial;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-body .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .row div {
+            text-align: center;
+        }
+
+        .row img {
+            width: 100%;
+            height: auto;
+            max-height: 100px;
+            object-fit: cover;
+        }
+
+        .row p {
+            margin: 5px 0;
+            font-family: Arial;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="amazon.jpg" alt="Amazon Banner">
+    </header>
+    
+    <section>
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-header">
+                Appliances for your home
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="amza1.jpg">
+                        <p>AirConditioners</p>
+                    </div>
+                    <div>
+                        <img src="amza2.jpg">
+                        <p>Refrigerators</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="amza3.jpg">
+                        <p>MircoWaves</p>
+                    </div>
+                    <div>
+                        <img src="amza4.jpg">
+                        <p>Washing Machines</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-header">
+                Revamp your home in style
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="amzb1.jpg">
+                        <p>Bedsheets & more</p>
+                    </div>
+                    <div>
+                        <img src="amzb2.jpg">
+                        <p>Figurines, vases & more</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="amzb3.jpg">
+                        <p>Home storage</p>
+                    </div>
+                    <div>
+                        <img src="amzb4.jpg">
+                        <p>Lighting solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-header">
+                Starting &#8377;149 | Headphones
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="amzc1.jpg">
+                        <p>Starting &#8377;249 | boAt</p>
+                    </div>
+                    <div>
+                        <img src="amzc2.jpg">
+                        <p>Starting &#8377;349 | boult</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="amzc3.jpg">
+                        <p>Starting &#8377;649 | Noise</p>
+                    </div>
+                    <div>
+                        <img src="amzc4.jpg">
+                        <p>Starting &#8377;149 | Zebronics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-header">
+                Automative essentials | Up to 60% off
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="amzd1.jpg">
+                        <p>Cleaning accessories</p>
+                    </div>
+                    <div>
+                        <img src="amzd2.jpg">
+                        <p>Tyre & rim care</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="amzd3.jpg">
+                        <p>Helmets</p>
+                    </div>
+                    <div>
+                        <img src="amzd4.jpg">
+                        <p>Vacuum cleaner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
